@@ -8,14 +8,14 @@
 <% else -%>
   <%=  scope.lookupvar('options') %>
 <% end -%>
-<% if scope.lookupvar('postrotate') != "NONE" -%> postrotate
+<% if scope.lookupvar('postrotate') != "NONE" -%>  postrotate
 <%   if scope.lookupvar('postrotate').is_a?(Array) -%>
 <%     scope.lookupvar('postrotate').each do |post| -%>
   <%= post %>
 <%     end -%>
 <%   else -%>
-  <%=  scope.lookupvar('postrotate') %>
+      <%=  scope.lookupvar('postrotate') %>
 <%   end -%>
-endscript
+  endscript
 <% end -%>
 }
